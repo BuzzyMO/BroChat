@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="client.Controller"
+          hgap="5" vgap="5">
+    <padding>
+        <Insets left="10" right="10" bottom="10" top="10"/>
+    </padding>
+    <children>
+        <TextArea fx:id="chatArea" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="textMessage" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button fx:id="sendButton" text="Send" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <VBox GridPane.rowIndex="0" GridPane.columnIndex="1">
+            <children>
+                <Label text="nickname"/>
+                <TextField fx:id="nicknameField"/>
+                <Button fx:id = "signInBtn" text="SignIn"/>
+                <Label text="Receiver"/>
+                <ComboBox fx:id="receiversBox"/>
+            </children>
+        </VBox>
+    </children>
+
+</GridPane>
